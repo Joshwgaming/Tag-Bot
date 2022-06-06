@@ -19,6 +19,7 @@ client.login(botToken);
 client.on('ready', async () =>{
     console.log(`Logged in as ${client.user.tag}.`);
 
+    client.user.setActivity(`${prefix}help`)
     await mongoose.connect(mongoPath, 
         {
         keepAlive: true,
@@ -189,5 +190,7 @@ client.on('messageCreate', async (message) =>{
             }
         }   
     }
+} else {
+    message.reply(`Use ${prefix}help to find the bot's commands!`)
 }
 })
