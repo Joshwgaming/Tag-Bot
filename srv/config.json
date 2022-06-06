@@ -1,0 +1,6 @@
+{
+    "botToken": "bot token",
+    "mongoPath": "mongo path",
+    "prefix": "?tag ",
+    "modRoleID": "mod role id here"
+}
